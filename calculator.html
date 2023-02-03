@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calclulator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <h1>My Calculator</h1>
+    <div class="center">
+<div class="head">
+    <form action="#">
+        <input type="text" class="input" id="input" placeholder="00" maxlength="12" >
+    </form>
+</div>
+<div class="body">
+<button class="input_buttons"  onclick="take_input('CE')">C/CE</button>
+<button class="input_buttons disable"onclick="take_input('sqrt')">Sqrt</button>
+<button class="input_buttons disable"onclick="take_input('%')">%</button>
+<button class="input_buttons "onclick="delete_char()">DEL</button>
+<button class="input_buttons"onclick="take_input(x)">MRC</button>
+<button class="input_buttons"onclick="take_input(x)">M-</button>
+<button class="input_buttons"onclick="take_input(x)">M+</button>
+<button class="input_buttons disable" onclick="take_input('/')">/</button>
+<button class="input_buttons"onclick="take_input(7)">7</button>
+<button class="input_buttons"onclick="take_input(8)">8</button>
+<button class="input_buttons"onclick="take_input(9)">9</button>
+<button class="input_buttons disable"onclick="take_input('*')">*</button>
+<button class="input_buttons"onclick="take_input(4)">4</button>
+<button class="input_buttons"onclick="take_input(5)">5</button>
+<button class="input_buttons"onclick="take_input(6)">6</button>
+<button class="input_buttons disable "onclick="take_input('-')">-</button>
+<button class="input_buttons"onclick="take_input(1)">1</button>
+<button class="input_buttons"onclick="take_input(2)">2</button>
+<button class="input_buttons"onclick="take_input(3)">3</button>
+<button class="input_buttons disable plus"onclick="take_input('+')">+</button>
+<button class="input_buttons"onclick="take_input(0)">0</button>
+<button class="input_buttons disable"onclick="take_input('.')">.</button>
+<button class="input_buttons disable"onclick="show_output()">=</button>
+</div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
